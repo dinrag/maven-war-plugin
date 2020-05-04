@@ -5,14 +5,25 @@ pipeline {
     stages {
 
       
-            stage('package')
-        {
-            steps{
-                
-            sh ' package'
+          stage ('package') {
+
+
+
+            steps {
+
+
+
+
+
+                    sh './mvnw clean package'
+
+
+
             }
-        }
-                     
+
+
+
+         }
      
 
 
